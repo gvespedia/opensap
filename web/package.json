@@ -1,0 +1,9 @@
+{
+	"name": "web-approuter",
+	"dependencies": {
+		"approuter": "0.0.1-security"
+	},
+	"scripts": {
+		"start": "node node_modules/approuter/approuter.js"
+	}
+}

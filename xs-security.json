@@ -1,0 +1,34 @@
+{
+	"xsappname": "openSAP5-ex",
+	"scopes": [{
+		"name": "$XSAPPNAME.Display",
+		"description": "display"
+	}, {
+		"name": "$XSAPPNAME.Create",
+		"description": "create"
+	}, {
+		"name": "$XSAPPNAME.Edit",
+		"description": "edit"
+	}, {
+		"name": "$XSAPPNAME.Delete",
+		"description": "delete"
+	}, {
+		"name": "$XSAPPNAME.DataGenerator",
+		"description": "data generator"
+	}, {
+		"name": "xs_authorization.read",
+		"description": "Read authorization information from UAA"
+	}, {
+		"name": "xs_authorization.write",
+		"description": "Write authorization information to UAA"
+	}],
+	"role-templates": [{
+		"name": "Viewer",
+		"description": "View all records",
+		"scope-references": ["$XSAPPNAME.Display"]
+	}, {
+		"name": "Editor",
+		"description": "Edit and Delete records",
+		"scope-references": ["$XSAPPNAME.Create", "$XSAPPNAME.Edit", "$XSAPPNAME.Delete", "$XSAPPNAME.Display", "$XSAPPNAME.DataGenerator"]
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	"engines": {
+		"node": "^0.12.7 || ^4.4.0 ",
+		"npm": "^2.11.x"
+	},
+	"dependencies": {
+		"@sap/cds": "^1.15.1",
+		"@sap/fibers": "2.0.0-2",
+		"@sap/hdbext": "^4.7.0",
+		"@sap/jobs-client": "^1.0.9",
+		"@sap/logging": "^3.3.1",
+		"@sap/textbundle": "latest",
+		"@sap/xsenv": "^1.2.2",
+		"@sap/xsjs": "^1.6.4",
+		"@sap/xssec": "^2.1.7",
+		"accept-language-parser": "latest",
+		"async": "latest",
+		"body-parser": "~1.15",
+		"express": "~4.14",
+		"fibers": "^2.0.0",
+		"node-gyp": "^3.6.2",
+		"node-xlsx": "~0.7.1",
+		"node-zip": "~1.1.1",
+		"passport": "~0.3.2",
+		"winston": "~2.2",
+		"ws": "1.1.0",
+		"xmldoc": "~0.5.1"
+	},
+	"description": "",
+	"files": [],
+	"main": "server.js",
+	"name": "core-js",
+	"scripts": {
+		"start": "node server.js",
+		"test": "node testrun.js"
+	},
+	"version": "1.0.0"
+}
